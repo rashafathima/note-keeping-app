@@ -7,7 +7,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { EditNoteComponent } from './edit-note/edit-note.component';
 
 const routes: Routes = [
-  {path: '/', component: SignUpComponent},
+  {path: '', component: SignUpComponent},
   { path: 'login', component: LoginComponent },
   // { path: 'add-notes', component: AddNotesComponent },
   { path: 'all-notes', component: AllNotesComponent }
