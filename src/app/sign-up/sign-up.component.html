@@ -1,0 +1,24 @@
+<div class="abc">
+  <mat-toolbar class="topHome">
+    <span style="font-size: xx-large;font-weight: 600;">Note Keeper</span>
+  </mat-toolbar>
+
+  <div fxLayoutAlign="center center" fxFlexFill class="alternative">
+    <mat-card fxFlex="25">
+      <mat-toolbar color="primary" class="mainSection"><span>Sign Up</span></mat-toolbar>
+      <form [formGroup]="signupForm" fxLayoutAlign="stretch" fxLayout="column" class="login-form" (ngSubmit)="signupForm.valid && signup()">
+        <mat-form-field>
+          <mat-label class="xyz">Email</mat-label>
+          <input matInput placeholder="Email ID" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label class="xyz">Password</mat-label>
+          <input matInput placeholder="Password" type="password" formControlName="password">
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" color="primary">Sign Up</button><br>
+      </form>
+    </mat-card>
+  </div>
+</div>

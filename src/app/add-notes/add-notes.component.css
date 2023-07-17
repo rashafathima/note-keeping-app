@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins:wght@300&family=Red+Rose&display=swap');
+
+
+.content1 {
+  padding-top: 10px;
+  font-family: 'Geo', sans-serif;
+}
+.actions {
+  padding: 0px 20px 50px;
+  font-family: 'Geo', sans-serif;
+}
+.content {
+  padding-top: 10px;
+  font-family: 'Geo', sans-serif;
+}
+.content .row {
+  display: flex;
+}
+.wide-input {
+  width: 550px; 
+}

@@ -1,0 +1,48 @@
+<div class="container">
+  <mat-toolbar class="content">
+    <span style="font-size: xx-large;">My Notes</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="btn" (click)="openData()">New Note</button>
+    <button mat-raised-button class="btn2" (click)="logOut()">Log Out</button>
+  </mat-toolbar>
+  <br>
+  <div class="notes-container">
+    <div class="note-card" *ngFor="let note of notes" [style.background-color]="note.color">
+      <div class="note-title">{{ note.title }}</div>
+      <div class="note-text">{{ note.text }}</div>
+      <div class="note-actions">
+        
+        <button mat-icon-button color="primary" (click)="editNote(note)"><mat-icon>edit</mat-icon></button>
+        <button mat-icon-button color="primary" (click)="deleteNote(note)"><mat-icon>delete</mat-icon></button>
+        <!-- <input type="color" [(ngModel)]="note.color"> -->
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  <!-- <mat-toolbar class="content">
+      <span style="font-size: xx-large;">My Notes</span>
+      <span class="example-spacer"></span>
+      <button mat-raised-button class="btn" (click)="openData()">
+        New Note
+      </button>
+  </mat-toolbar> -->
+  
+  <!-- 
+  (click)="createNote()" -->
+
+
+
+<!-- <mat-toolbar class="content">
+    <span style="font-size: xx-large;">My Notes</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="btn" (click)="openData()">
+      New Note
+    </button>
+</mat-toolbar> -->
+
+<!-- 
+(click)="createNote()" -->

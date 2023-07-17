@@ -1,0 +1,29 @@
+<div mat-dialog-title class="content1" style="align-self: center; font-size: x-large;">
+  Write Notes
+</div>
+
+<div mat-dialog-content class="content" style="align-self: center;">
+  <div class="row">
+    <mat-form-field appearance="outline" class="wide-input">
+      <mat-label style="font-family: 'Geo', sans-serif;font-size: large;">Title</mat-label>
+      <input matInput style="font-family: 'Poppins', sans-serif;" [(ngModel)]="title">
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline" class="wide-input">
+      <mat-label style="font-family: 'Geo', sans-serif; font-size: large;">Type text here...</mat-label>
+      <textarea matInput style="font-family: 'Poppins', sans-serif;" [(ngModel)]="text"></textarea>
+  </mat-form-field>
+  </div>
+    <div class="row"><input type="color" [(ngModel)]="color"></div>
+</div>
+
+  
+<div mat-dialog-actions class="actions">
+  <button mat-raised-button color="primary" type="submit" style="font-family: 'Poppins', sans-serif; font-size: large;" (click)="save()">
+      Save
+  </button>
+  <button mat-raised-button style="font-family: 'Poppins', sans-serif;font-size: large;" (click)="cancel()">
+      Cancel
+  </button>
+</div>

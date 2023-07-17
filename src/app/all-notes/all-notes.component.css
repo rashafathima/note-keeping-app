@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins:wght@300&family=Red+Rose&display=swap');
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .container {
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+  }
+  
+  span {
+    font-weight: 600;
+    font-size: xx-large;
+    color: aliceblue;
+  }
+  
+  .content .btn {
+    font-size: large;
+    background-color: rgb(17, 3, 48);
+    color: aliceblue;
+    font-family: 'Geo', sans-serif;
+    font-size: larger;
+    
+  }
+  
+  .content .btn2 {
+    font-size: large;
+    background-color: rgb(163, 0, 0);
+    color: aliceblue;
+    font-family: 'Geo', sans-serif;
+    font-size: larger;
+    margin-left: 10px;;
+    
+  }
+
+  .content {
+    background-color: #673ab7;
+    font-family: 'Geo', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Red Rose', cursive; */
+  }
+
+  
+
+
+  .notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: -10px;
+    margin-left: 10px;
+  }
+  
+  .note-card {
+    width: calc(28% - 20px); /* Adjust the width as per your layout requirements */
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    background-color: var(--note-color, #ffffff);
+  }
+  
+  .note-title {
+    text-align: center;
+    font-family: 'Geo', sans-serif;
+    font-size: x-large ;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .note-text {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+  }
+  
+  .note-card::before {
+    content: '';
+    display: block;
+    /* border-bottom: 20px dashed #000; */
+    margin-bottom: 10px;
+  }
+  
+  .note-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

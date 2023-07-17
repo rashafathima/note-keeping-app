@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins:wght@300&family=Red+Rose&display=swap');
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: 'Geo', sans-serif;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Red Rose', cursive; */
+}
