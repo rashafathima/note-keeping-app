@@ -129,7 +129,6 @@ logOut(): void {
 
 
 
-  // Add a method to update the color of a note
   async updateNoteColor(noteId: string, color: string): Promise<void> {
     const { data, error } = await this.supabase
       .from('notes')
@@ -140,7 +139,6 @@ logOut(): void {
     }
   }
 
-  // Add a method to get the color of a note
   async getNoteColor(noteId: string): Promise<string | null> {
     const { data, error } = await this.supabase
       .from('notes')
